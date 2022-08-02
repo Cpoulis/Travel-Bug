@@ -1,11 +1,12 @@
 import axios from 'axios';
 
 var baseURL;
-if (process.env.REACT_APP_ENVIRONMENT && process.env.REACT_APP_ENVIRONMENT === 'PRODUCTION') {
-    baseURL = process.env.REACT_APP_API_BASE_URL;
-} else {
-    baseURL = 'http://127.0.0.1:8002';
-}
+// if (process.env.REACT_APP_ENVIRONMENT && process.env.REACT_APP_ENVIRONMENT === 'PRODUCTION') {
+//     baseURL = process.env.REACT_APP_API_BASE_URL;
+// } else {
+//     baseURL = 'https://travel-bug-backend1.herokuapp.com/';
+// }
+ baseURL = 'https://travel-bug-backend1.herokuapp.com/';
 
 // baseURL = "";
 const api = axios.create({
